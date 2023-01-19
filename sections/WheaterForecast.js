@@ -41,7 +41,6 @@ const displayWeatherForecast = city => {
           weatherForecastContainer.innerHTML += /*html*/ `
           <div class="weather-forecast-box d-flex justify-content-between align-items-center border rounded p-3 mb-3">
             <div>
-              <strong>${day}</strong>
               ${hour}
             </div>
             <div>
@@ -49,7 +48,7 @@ const displayWeatherForecast = city => {
             </div>
             <div class="fs-3"><strong>${temperature}°C</strong></div>
             <div>${weather[0].description}</div>
-            <div>Real feel: <strong>${realFeel}°C</strong></div>
+            <div class="real-feel">Real feel: <strong>${realFeel}°C</strong></div>
           </div>
         `;
         });
