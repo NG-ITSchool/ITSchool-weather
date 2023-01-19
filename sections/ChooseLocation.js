@@ -6,6 +6,7 @@ const currentCityContainer = document.querySelector(".current-city");
 const handleCityClick = city => {
   currentCityContainer.innerText = city;
   displayCurrentWeather(city);
+  displayWeatherForecast(city);
   localStorage.setItem("city", city);
 };
 
@@ -20,3 +21,13 @@ timisoara.addEventListener("click", () => {
 oradea.addEventListener("click", () => {
   handleCityClick("Oradea");
 });
+
+// Solutie alternativa
+
+// const cityElements = document.querySelectorAll(".dropdown-menu .dropdown-item");
+
+// cityElements.forEach(cityElement => {
+//   cityElement.addEventListener("click", () => {
+//     handleCityClick(cityElement.innerText);
+//   });
+// });

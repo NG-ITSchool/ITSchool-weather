@@ -9,3 +9,4 @@ if (!currentCity) {
 
 currentCityTag.innerHTML = currentCity;
 displayCurrentWeather(currentCity);
+displayWeatherForecast(currentCity);

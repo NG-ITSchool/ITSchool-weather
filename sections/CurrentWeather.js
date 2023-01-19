@@ -20,7 +20,8 @@ const displayCurrentWeather = city => {
 
       const currentWeatherContainer =
         document.querySelector(".current-weather");
-      currentWeatherContainer.innerHTML = `
+
+      currentWeatherContainer.innerHTML = /*html*/ `
         <div class="px-3">
           <div class="fs-2 mb-2"><strong>${name}</strong></div>
           <div class="fs-4">
